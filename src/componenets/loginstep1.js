@@ -99,8 +99,8 @@ export default function Loginstep1() {
         validationform(Name, value);
 
 
-        if (obj.email != "" && obj.first_name != "" && obj.last_name != "" &&
-            obj.Cellno != "" && obj.Password != "" && obj.ConfirmPassword != "" && obj.Venue != "" && obj.AboutShow != "") {
+        if (obj.email !== "" && obj.first_name !== "" && obj.last_name !== "" &&
+            obj.Cellno !== "" && obj.Password !== "" && obj.ConfirmPassword !== "" && obj.Venue !== "" && obj.AboutShow !== "") {
             dispatch(AddDetails(obj));
 
         }

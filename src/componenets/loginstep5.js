@@ -127,10 +127,7 @@ export default function Loginstep5() {
 	function handleChange(evt) {
 
 		const value = evt.target.value;
-		setfeild({
-			...feild,
-			[evt.target.name]: value
-		});
+	
 		let obj = {
 			...feild,
 			[evt.target.name]: value
@@ -150,7 +147,7 @@ export default function Loginstep5() {
 
 	}
 	function Nextvalidation() {
-
+		debugger
 		errors["iserror"] = "false";
 		if (mystate.your_picture === "") {
 			errors["your_picture"] = "Please choose image";

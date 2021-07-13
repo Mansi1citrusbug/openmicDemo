@@ -8,9 +8,6 @@ export default function Loginstep6() {
 	const [myloginform, setmyloginform] = useState();
 	const dispatch = useDispatch();
 	const mystate = useSelector(state => state.feild);
-	
-
-
 
 	const clickprevious = (myid) => {
 
@@ -32,16 +29,10 @@ export default function Loginstep6() {
 		alert(JSON.stringify(mystate))
 	}
 
-	// const mystate = useSelector(state => state.feild);
-
 	const [feild, setfeild] = useState({
 		"myloginform": ""
 	});
 	const [files, setFiles] = useState('');
-
-
-
-
 
 	useEffect(() => {
 		if (mystate !== "") {
@@ -49,9 +40,6 @@ export default function Loginstep6() {
 			setFiles(mystate.your_picture);
 		}
 	}, [mystate]);
-
-
-
 
 	return (
 		<>
