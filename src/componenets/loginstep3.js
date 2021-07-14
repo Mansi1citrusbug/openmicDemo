@@ -46,7 +46,7 @@ export default function Loginstep3() {
   });
 
   useEffect(() => {
-    if (mystorestate != "") {
+    if (mystorestate !== "") {
       setfeild({
         myloginform: mystorestate.myloginform,
         describe: mystorestate.describe,

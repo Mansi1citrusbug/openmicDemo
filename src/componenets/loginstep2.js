@@ -47,7 +47,7 @@ export default function Loginstep2() {
   };
 
   useEffect(() => {
-    if (mystorestate != "") {
+    if (mystorestate !== "") {
       setfeild({
         myloginform: mystorestate.myloginform,
         Date: mystorestate.Date,
